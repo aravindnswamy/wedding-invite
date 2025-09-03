@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0A3746">
+    <meta name="author" content="Aravind & Apoorva">
+    <meta name="title" content="Aravind & Apoorva | Wedding Invitation">
+    <meta name="description" content="Join us to celebrate our wedding in Kumta & Purappemane, Sagar on the 17th & 18th November 2025">
+    <meta name="image" content="meta-image.jpeg">
+    <meta name="og:image" content="meta-image.jpeg">
+    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+
+
+    <title>Wedding Invitation: Aravind weds Apoorva</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&family=Roboto:wght@300;400;500;700&display=swap&family=Hubballi&family=Noto+Sans+Kannada:wght@300;400;500;700&family=Noto+Sans+Kannada:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=Lora:ital,wght@0,400;0,700;1,400&family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        :root {
+
+    --primary: #D4AF37;
+    --primary-dark: #B08D57;
+    --accent: #FFD700;
+    --text-light: #FFF8E1;
+    --background: #000;
+    --background-alt: #000;
+    --primary-rgb: 212, 175, 55;
+    --accent-rgb: 255, 215, 0;
+    
+--gold-primary: var(--primary);
+            --gold-secondary: var(--primary-dark);
+            --gold-light: var(--accent);
+            --cream: var(--text-light);
+            --dark-blue: var(--dark-blue);
+            --darker-blue: var(--darker-blue);
+    text-shadow: black 0 0 2px, black 0 0 3px, black 0 0 4px;
+        }
+        
+        body, h1, h2, h3, h4, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            font-family: "Montserrat", sans-serif;
+            color: var(--cream);
+}
+        button{
+            text-shadow: black 0 0 2px, black 0 0 3px, black 0 0 4px;
+
+        }
+        
+        body {
+            font-family: "Montserrat", sans-serif;
+            background: linear-gradient(135deg, var(--background), var(--background-alt), var(--background));
+            color: var(--cream);
+            overflow-x: hidden;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+        }
+        
+        .font-kannada {
+            font-family: 'Noto Sans Kannada', sans-serif;
+        }
+        .font-hubballi {
+            font-family: 'Hubballi', cursive;
+        }
+        .font-cinzel-decorative {
+            font-family: 'Cinzel Decorative', serif;
+        }
+        .font-lora {
+            font-family: 'Lora', serif;
+            font-style: italic;
+        }
+        .font-cursive {
+            font-family: 'Lugrasimo', cursive;
+        }
+        
+        .main-card {
+            width: 100%;
+            max-width: 900px;
+            background: linear-gradient(135deg, rgba(10, 55, 70, 0.8), rgba(12, 45, 60, 0.5), rgba(10, 55, 70, 0.8));
+            backdrop-filter: blur(16px);
+            border-radius: 1.5rem;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5), 
+                        0 0 0 1px rgba(212, 175, 55, 0.1) inset,
+                        0 0 30px rgba(212, 175, 55, 0.1) inset;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .main-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 20% 30%, rgba(212, 175, 55, 0.05) 0%, transparent 60%);
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .invitation-header {
+            position: relative;
+            padding: 3rem 2rem 2rem;
+            text-align: center;
+        }
+        .invitation-header::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            height: 1px;
+            background: linear-gradient(to right, transparent, var(--gold-primary), transparent);
+        }
+
+        .section-separator {
+            content: "";
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(to right, transparent, var(--gold-primary), transparent);
+        }
+        .text-gold-shine {
+            color: var(--gold-light);
+            text-shadow: 0 0 2px var(--gold-light), 0 0 1px #B8860B, 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        .text-gold-heading {
+            color: var(--gold-primary);
+            text-shadow: 2px 3px 4px rgba(0,0,0,0.7);
+        }
+        .text-cream {
+            color: var(--cream);
+        }
+
+        .text-golden-tint{
+            color: var(--gold-secondary);
+            text-shadow: 0 0 2px #000, 0 0 1px #000, 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        
+        .decorative-border-names {
+            position: relative;
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 700px;
+            border: 1px solid var(--gold-secondary);
+            border-radius: 1rem;
+            background: linear-gradient(145deg, rgba(0,0,0,0.1), rgba(0,0,0,0.15));
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3), inset 0 0 10px rgba(212, 175, 55, 0.1);
+        }
+        
+        .decorative-border-names::before,
+        .decorative-border-names::after {
+            content: "";
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background-image: url('rose-removebg-preview.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 1;
+        }
+        
+        .decorative-border-names::before {
+            top: -20px;
+            left: -20px;
+        }
+        
+        .decorative-border-names::after {
+            bottom: -40px;
+            right: -44px;
+        }
+        
+        .event-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .event-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            border-color: rgba(212, 175, 55, 0.4);
+        }
+        
+        .btn-action {
+            background: linear-gradient(to bottom, rgba(212, 175, 55, 0.2), rgba(180, 140, 40, 0.15));
+            color: var(--gold-light);
+            border: 1px solid var(--gold-secondary);
+            border-radius: 0.5rem;
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            transition: all 0.3s ease;
+            margin-top: 0.5rem;
+        }
+        
+        .btn-action:hover {
+            background: linear-gradient(to bottom, rgba(212, 175, 55, 0.3), rgba(180, 140, 40, 0.25));
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        .lang-toggle-btn {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            z-index: 100;
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(5px);
+            border: 1px solid var(--gold-secondary);
+            color: var(--gold-light);
+            border-radius: 0.5rem;
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 4px rgba(212, 175, 55, 0.5); /* Added golden shadow for highlight */
+            cursor: pointer; /* Change cursor to pointer */
+        }
+        
+        .lang-toggle-btn:hover {
+            background: rgba(212, 175, 55, 0.2);
+        }
+        
+        .icon-style {
+            width: 1.2em;
+            height: 1.2em;
+            margin-right: 0.5rem;
+        }
+        
+        .couple-name {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .couple-name::after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(to right, transparent, var(--gold-primary), transparent);
+        }
+        
+        .divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .divider::before,
+        .divider::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(to right, transparent, var(--gold-primary), transparent);
+        }
+        
+        .divider span {
+            color: var(--gold-light);
+            font-size: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .main-card {
+                border-radius: 1rem;
+            }
+            
+            .invitation-header {
+                padding: 2rem 1rem;
+            }
+            
+            .decorative-border-names {
+                padding: 1.5rem;
+                margin: 1.5rem auto;
+            }
+            
+            .couple-name {
+                font-size: 1.5rem;
+            }
+            
+            .event-card {
+                padding: 1.25rem;
+            }
+            
+            .btn-action {
+                width: 100%;
+                justify-content: center;
+                margin-top: 0.75rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .couple-name {
+                font-size: 1.3rem;
+            }
+            
+            .event-card {
+                padding: 1rem;
+            }
+            
+            .lang-toggle-btn {
+                padding: 0.4rem 0.8rem;
+                font-size: 0.8rem;
+            }
+        }
+        
+        .kannada-content { 
+            display: none; 
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <button id="langToggle" class="lang-toggle-btn font-lora">ಕನ್ನಡ / English</button>
+    
+    <div class="main-card animate-fade-in">
+        
+        <div id="englishContent" class="english-content space-y-8 py-8 px-4 md:px-8">
+            <div class="invitation-header">
+                <img src="ganapathi.png" alt="Sri Ganeshaya Namaha" class="mx-auto h-28 md:h-36 w-auto drop-shadow-lg">
+                <p class="font-kannada text-lg md:text-xl text-gold-shine mt-4">"Sri Ganeshaya Namaha"</p>
+                <!-- <p class="font-lora text-xs md:text-sm italic text-cream opacity-80 mt-2 px-4">
+                    Śrī matpayōnidhinikētana cakrapāṇē bhōgīndrabhōgamaṇirañjita puṇyamūrtē | <br>
+                    Yōgīśa śāśvata śaraṇya bhavābdhipōta śrī lakṣmīnr̥siṁha mama dēhi karāvalambam ||
+                </p> -->
+                <h1 class="font-cinzel-decorative text-3xl md:text-4xl lg:text-5xl text-gold-heading mt-6 tracking-wider">Wedding Invitation</h1>
+            </div>
+            <section class="text-center space-y-4 max-w-3xl mx-auto">
+                <p class="text-md md:text-lg text-cream">With divine blessings and joyous hearts,</p>
+                <p class="text-sm md:text-base text-cream opacity-90">
+                    <strong class="text-lg text-golden-tint">Smt. MangalaGowri N. & Sri. Narayanaswamy N.</strong>
+                    <br/>
+                    <span class="text-sm">and</span> 
+                    <br/>
+                    <strong class="text-lg text-golden-tint">Smt. Suvasini Yaji & Sri. Narayana Ganapathi Bhat</strong>
+                </p>
+                <p class="text-md md:text-lg text-cream mt-4">cordially invite you to grace the auspicious wedding ceremony of</p>
+            </section>
+
+            <div class="section-separator">
+
+            </div>
+
+            <section class="text-center py-6">
+                <div class="decorative-border-names">
+                    <div class="flex flex-col items-center">
+                        <div class="groom-details mb-6">
+                            <h2 class="couple-name font-cinzel-decorative text-gold-shine">Aravind N</h2>
+                            <p class="text-xs md:text-sm text-cream opacity-80 mt-1">(Son of Smt. MangalaGowri N. & Sri. Narayanaswamy N.)</p>
+                        </div>
+                        
+                        <div class="divider">
+                            <span><i data-lucide="heart-handshake" class="icon-style"></i></span>
+                        </div>
+                        
+                        <div class="bride-details mt-6">
+                            <h2 class="couple-name font-cinzel-decorative text-gold-shine">Apoorva Bhat</h2>
+                            <p class="text-xs md:text-sm text-cream opacity-80 mt-1">(Daughter of Smt. Suvasini Yaji & Sri. Narayana Ganapathi Bhat)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-separator"></div>
+
+            <section class="space-y-8 py-4">
+                <h3 class="font-cinzel-decorative text-gold-heading text-2xl md:text-3xl text-center mb-6">WEDDING FESTIVITIES</h3>
+              
+                <div class="max-w-3xl mx-auto">
+                  <div class="flex flex-col md:flex-row gap-4">
+                    
+                    <!-- Wedding Muhurtham -->
+                    <div class="event-card flex-1 flex flex-col justify-between p-4">
+                      <div>
+                        <h4 class="text-xl md:text-2xl text-gold-shine mb-4 flex items-center justify-center">
+                          <i data-lucide="gem" class="icon-style"></i>Wedding Muhurtham
+                        </h4>
+                        <h5 class="text-xl md:text-2xl text-golden-tint mb-4 flex items-center justify-center">(Baada, Kumta)</h5>
+                        <p class="text-md text-cream"><strong>Date:</strong> Monday, 17th November 2025</p>
+                        <p class="mt-4 text-md text-cream"><strong>Time:</strong> 12:17 PM IST (Abhijith Lagnam)</p>
+                        <p class="mt-4 text-md text-cream"><strong>Venue:</strong> Shri Kanchika Parameshwari Sabhabhavana, Gudeangadi, Baada, Kumta - 581351</p>
+                      </div>
+                      <div class="mt-4 flex flex-wrap gap-2 justify-center">
+                        <a href="https://maps.app.goo.gl/TsY32BdEAsbFrTCy9" target="_blank" class="btn-action">
+                          <i data-lucide="map-pin" class="icon-style"></i>View on Map
+                        </a>
+                        <button onclick="addToCalendar('Muhurtham: Aravind & Apoorva (Kumta)', '20250804T000000', '20250804T240000', 'Muhurtham ceremony in Kumta.', 'Shri Kanchika Parameshwari Sabhabhavana, Gudeangadi, Baada, Kumta')" class="btn-action">
+                          <i data-lucide="calendar-plus" class="icon-style"></i>Add to Calendar
+                        </button>
+                      </div>
+                    </div>
+              
+                    <!-- Reception -->
+                    <div class="event-card flex-1 flex flex-col justify-between p-4">
+                      <div>
+                        <h4 class="text-xl md:text-2xl text-gold-shine mb-4 flex items-center justify-center">
+                          <i data-lucide="ice-cream-bowl" class="icon-style"></i>Reception
+                        </h4>
+                        <h5 class="text-xl md:text-2xl text-golden-tint mb-4 flex items-center justify-center">(Purappemane, Sagar)</h5>
+                        <p class="text-md text-cream"><strong>Date:</strong> Sunday, 18th November 2025</p>
+                        <p class="mt-4 text-md text-cream"><strong>Time:</strong> 11:00 AM IST onwards</p>
+                        <p class="mt-4 text-md text-cream"><strong>Venue:</strong> "Samruddhi", Purappemane, Sagar, Shivamogga - 577417</p>
+                      </div>
+                      <div class="mt-4 flex flex-wrap gap-2 justify-center">
+                        <a href="https://maps.app.goo.gl/S55cJHb7PdsPySmM6" target="_blank" class="btn-action">
+                          <i data-lucide="map-pin" class="icon-style"></i>View on Map
+                        </a>
+                        <button onclick="addToCalendar('Reception: Aravind & Apoorva (Purappement, Sagar)', '20250810T113000', '20250810T143000', 'Wedding Reception in Purappemane, Sagar.', 'Samruddhi, Purappemane, Sagar, Shivamogga')" class="btn-action">
+                          <i data-lucide="calendar-plus" class="icon-style"></i>Add to Calendar
+                        </button>
+                      </div>
+                    </div>
+              
+                  </div>
+                </div>
+              </section>
+              
+            <div class="section-separator"></div>
+            <section class="text-center space-y-4 py-8">
+                <p class="text-sm text-cream opacity-90">We eagerly await your gracious presence and blessings to celebrate this joyous union.</p>
+                <h4 class="font-lora text-xl text-gold-heading pt-4">Awaiting your kind presence,</h4>
+                <br/>
+                <strong class="text-md md:text-lg text-golden-tint">Smt. MangalaGowri N. & Sri. Narayanaswamy N.</strong>
+            </section>
+            
+            <div class="section-separator"></div>
+
+            <footer class="text-center py-8">
+                <h4 class="font-lora text-lg text-gold-heading mb-4">With Best Compliments From:</h4>
+                <p class="text-sm opacity-80">Smt. Madhulatha & Sri. N. Rajashekar & Family</p>
+                <p class="text-sm opacity-80">Smt. Prathima & Sri. U. R. Krishnamurthy</p>
+                <p class="text-sm opacity-80">Smt. Kamala Venkataramana Hegde</p>
+                <p class="text-sm opacity-80">Smt. Indira & Sri. Manjunatha Venkataramana Hedge & Brothers</p>
+                <p class="text-sm opacity-80">All Relatives & Friends</p>
+            </footer>
+        </div>
+
+        <div id="kannadaContent" class="kannada-content space-y-8 py-8 px-4 md:px-8">
+            <div class="invitation-header">
+                <img src="narasimha_lakshmi_transparent.png" alt="Sri Lakshmi Narasimha Swamy" class="mx-auto h-28 md:h-36 w-auto drop-shadow-lg">
+                <p class="font-kannada text-lg md:text-xl text-gold-shine mt-4">"ಶ್ರೀ ಲಕ್ಷ್ಮಿ ನರಸಿಂಹ ಸ್ವಾಮಿ ಪ್ರಸನ್ನ"</p>
+                <p class="font-lora text-xs md:text-sm italic text-cream opacity-80 mt-2 px-4">
+                    ಶ್ರೀಮತ್ಪಯೋನಿಧಿನಿಕೇತನ ಚಕ್ರಪಾಣೇ ಭೋಗೀಂದ್ರಭೋಗಮಣಿರಾಜಿತ ಪುಣ್ಯಮೂರ್ತೇ | <br>
+                    ಯೋಗೀಶ ಶಾಶ್ವತ ಶರಣ್ಯ ಭವಾಬ್ಧಿಪೋತ ಲಕ್ಷ್ಮೀನೃಸಿಂಹ ಮಮ ದೇಹಿ ಕರಾವಲಂಬಮ್ ||
+                </p>
+                <h1 class="font-hubballi text-3xl md:text-4xl lg:text-5xl text-gold-heading mt-6 tracking-wider">ವಿವಾಹೋತ್ಸವದ ಆಮಂತ್ರಣ</h1>
+            </div>
+            <section class="text-center space-y-4 max-w-3xl mx-auto">
+                <p class="font-kannada text-md md:text-lg text-cream">ಭಗವಾನ್ ಸದ್ಗುರು ಶ್ರೀ ಶ್ರೀಧರ ಸ್ವಾಮಿಗಳ ಕೃಪಾಶೀರ್ವಾದದೊಂದಿಗೆ,</p>
+                <p class="font-kannada text-md md:text-lg text-cream">ಪ. ಪೂ. ಶ್ರೀಮದ್ ಜಗದ್ಗುರು ಶಂಕರಾಚಾರ್ಯ ಶ್ರೀ ಶ್ರೀ ರಾಘವೇಶ್ವರ ಭಾರತಿ ಮಹಾಸ್ವಾಮಿಗಳವರು
+ಶ್ರೀ ರಾಮಚಂದ್ರಾಪುರಮಠ ಇವರ ದಿವ್ಯಾಶೀರ್ವಾದಗಳೊಂದಿಗೆ,</p>
+                <p class="font-kannada text-sm md:text-base text-cream opacity-90">
+                    <strong class="text-lg text-golden-tint">ಶ್ರೀಮತಿ ಮಂಗಳಗೌರಿ ಎನ್. ಮತ್ತು ಶ್ರೀ ನಾರಾಯಣಸ್ವಾಮಿ ಎನ್.</strong>
+                    <br/>
+                    <span class="text-sm">ಹಾಗೂ </span>
+                    <br/>
+                    <strong class="text-lg text-golden-tint">ಶ್ರೀಮತಿ ಸುವಾಸಿನಿ ಯಾಜಿ. ಮತ್ತು ಶ್ರೀ ನಾರಾಯಣ ಗಣಪತಿ ಭಟ್.</strong>
+                </p>
+                <p class="font-kannada text-md md:text-lg text-cream mt-4">ಇವರು ಮಾಡುವ ವಿಜ್ಞಾಪನೆಗಳು</p>
+            </section>
+
+            <div class="section-separator"></div>
+
+            <section class="text-center py-6">
+                <p class="font-kannada text-sm text-cream opacity-90">
+                    ಸ್ವಸ್ತಿ ಶ್ರೀ ವಿಜಯ ಅಭ್ಯುದಯ ಶಾಲಿವಾಹನ ಶಕ ವರ್ಷ 1947 ನೇ ಶ್ರೀ ವಿಶ್ವಾವಸುನಾಮ ಸಂವತ್ಸರದ ಶ್ರಾವಣ ಮಾಸ ಶುಕ್ಲ ಪಕ್ಷ ದಶಮಿ, ಸೋಮವಾರ. </p>
+                    <p class="font-kannada text-sm text-cream opacity-90">ದಿನಾಂಕ 17-11-2025 ರಂದು ಬೆಳಿಗ್ಗೆ 12.16ಕ್ಕೆ  ಸಲ್ಲುವ ಶುಭ ಮಿಥುನ ಲಗ್ನ ಸುಮಹೂರ್ತದಲ್ಲಿ 
+                </p>
+                <div class="decorative-border-names">
+                    <div class="flex flex-col items-center">
+                        <div class="groom-details mb-6">
+                            <h2 class="font-hubballi couple-name text-gold-shine">ಚಿ||ರಾ|| ಅರವಿಂದ್ ಎನ್</h2>
+                            <p class="font-kannada text-xs md:text-sm text-cream opacity-80 mt-1">(ಶ್ರೀಮತಿ ಮಂಗಳಗೌರಿ ಎನ್. ಮತ್ತು ಶ್ರೀ ನಾರಾಯಣಸ್ವಾಮಿ ಎನ್. ಇವರ ಸುಪುತ್ರ)</p>
+                        </div>
+                        
+                        <div class="divider">
+                            <span><i data-lucide="heart-handshake" class="icon-style"></i></span>
+                        </div>
+                        
+                        <div class="bride-details mt-6">
+                            <h2 class="font-hubballi couple-name text-gold-shine">ಚಿ||ಕುಂ||ಸೌ|| ಅಪೂರ್ವ ಭಟ್</h2>
+                            <p class="font-kannada text-xs md:text-sm text-cream opacity-80 mt-1">(ಶ್ರೀಮತಿ ಸುವಾಸಿನಿ ಯಾಜಿ. ಮತ್ತು ಶ್ರೀ ನಾರಾಯಣ ಗಣಪತಿ ಭಟ್. ಇವರ ಪುತ್ರಿ)</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <br>
+                <p class="font-kannada text-sm text-cream opacity-90">ಇವರ ಶುಭ ವಿವಾಹ ಮಹೋತ್ಸವವನ್ನು 
+                    ಗುರು ಹಿರಿಯರು ನಿಶ್ಚಯಿಸಿರುವುದರಿಂದ ತಾವೆಲ್ಲರೂ ಸಕುಟುಂಬ ಸಮೇತರಾಗಿ ಆಗಮಿಸಿ ವಧು ವರರನ್ನು ಆಶೀರ್ವದಿಸಿ ,  ಯಥೋಚಿತ ಸತ್ಕಾರವನ್ನು ಸ್ವೀಕರಿಸಬೇಕಾಗಿ ಕೋರುವ,</p>
+                    
+                        <h4 class="font-kannada font-bold text-xl text-gold-heading pt-4">ತಮ್ಮ ಆಗಮನಾಭಿಲಾಷಿಗಳು</h4>
+                        <br/>
+                        <strong class="font-kannada text-md md:text-lg text-golden-tint" >ಶ್ರೀಮತಿ ಮಂಗಳಗೌರಿ ಎನ್. ಮತ್ತು ಶ್ರೀ ನಾರಾಯಣಸ್ವಾಮಿ ಎನ್.</strong>
+             
+            </section>
+
+            <div class="section-separator"></div>
+
+            <section class="space-y-8 py-4">
+                <h3 class="font-hubballi font-bold text-2xl md:text-3xl text-center text-gold-heading mb-6">ವಿವಾಹ ಕಾರ್ಯಕ್ರಮಗಳು</h3>
+                <div class="max-w-3xl mx-auto">
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <div class="event-card flex-1 flex flex-col justify-between p-4">
+                            <div>
+                                <h4 class="font-kannada font-bold text-xl md:text-2xl text-gold-shine mb-4 flex items-center justify-center">
+                                    <i data-lucide="gem" class="icon-style"></i>ವಿವಾಹ ಮುಹೂರ್ತ
+                                </h4>
+                                <h5 class="text-xl md:text-2xl text-golden-tint mb-4 flex items-center justify-center">(ಧಾರವಾಡ)</h5>
+                        
+                                <p class="text-md text-cream"><strong>ದಿನಾಂಕ:</strong> 04-08-2025, ಸೋಮವಾರ</p>
+                                <p class="mt-4 text-md text-cream"><strong>ಸಮಯ:</strong> ಬೆಳಿಗ್ಗೆ 4.15 ಕ್ಕೆ (ಶುಭ ಮಿಥುನ ಲಗ್ನ)</p>
+                                <p class="mt-4 text-md text-cream"><strong>ಸ್ಥಳ:</strong> ಬಿ ಡಿ ಪಾಟೀಲ್ ಕನ್ವೆನ್ಷನ್ ಹಾಲ್, ಬನಶ್ರೀ ನಗರ ಕೊನೆಯ ನಿಲುಗಡೆ, HUDCO ಕಾಲೋನಿ, ಧಾರವಾಡ - 580008</p>
+                            </div>
+                            <div class="mt-4 flex flex-wrap gap-2 justify-center">
+                                <a href="https://maps.app.goo.gl/DHndpXVMA5ZsnsiK7" target="_blank" class="btn-action font-kannada">
+                                    <i data-lucide="map-pin" class="icon-style"></i>ನಕ್ಷೆಯಲ್ಲಿ ನೋಡಿ
+                                </a>
+                                <button onclick="addToCalendar('ವಿವಾಹ ಮುಹೂರ್ತ: ಅರವಿಂದ್ ಮತ್ತು ಅಪೂರ್ವ (ಕುಮಟ)', '20250804T000000', '20250804T240000', 'ಕುಮಟದಲ್ಲಿ ವಿವಾಹ ಮುಹೂರ್ತ.', 'ಶ್ರೀ ಕಂಚಿಕಾ ಪರಮೇಶ್ವರಿ ಸಭಾ ಭವನ, ಗುಡೆಅಂಗಡಿ, ಬಾಡ, ಕುಮಟ - 581351')" class="btn-action">
+                                    <i data-lucide="calendar-plus" class="icon-style"></i>ಕ್ಯಾಲೆಂಡರ್‌ಗೆ ಸೇರಿಸಿ
+                                </button>
+                            </div>
+                        </div>
+                        <div class="event-card flex-1 flex flex-col justify-between p-4">
+                            <div>
+                                <h4 class="font-kannada font-bold text-xl md:text-2xl text-gold-shine mb-4 flex items-center justify-center">
+                                    <i data-lucide="ice-cream-bowl" class="icon-style"></i>ಆರತಕ್ಷತೆ
+                                </h4>
+                                <h5 class="text-xl md:text-2xl text-golden-tint mb-4 flex items-center justify-center"> (ಪುರಪ್ಪೇಮನೆ, ಸಾಗರ)</h5>
+                                <p class="font-kannada text-md text-cream"><strong>ದಿನಾಂಕ:</strong> 18-11-2025, ಮಂಗಳವಾರ</p>
+                                <p class="mt-4 font-kannada text-md text-cream"><strong>ಸಮಯ:</strong> ಬೆಳಿಗ್ಗೆ 11.30 ರ ನಂತರ</p>
+                                <p class="mt-4 font-kannada text-md text-cream"><strong>ಸ್ಥಳ:</strong> "ಸಮೃದ್ಧಿ", ಪುರಪ್ಪೇಮನೆ, ಸಾಗರ - 577417</p>
+                               
+                            </div>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <a href="https://maps.app.goo.gl/MBsUXNKveZEfpdJf7" target="_blank" class="btn-action font-kannada">
+                                    <i data-lucide="map-pin" class="icon-style"></i>ನಕ್ಷೆಯಲ್ಲಿ ನೋಡಿ
+                                </a>
+                                <button onclick="addToCalendar('ಆರತಕ್ಷತೆ: ಅರವಿಂದ್ ಮತ್ತು ಅಪೂರ್ವ (ಪುರಪ್ಪೇಮನೆ, ಸಾಗರ)', '20251018T113000', '20251018T117000', 'ಪುರಪ್ಪೇಮನೆ, ಸಾಗರ ಅಲ್ಲಿ ಆರತಕ್ಷತೆ.', 'ಸಮೃದ್ಧಿ, ಪುರಪ್ಪೇಮನೆ, ಸಾಗರ - 577417')" class="btn-action font-kannada">
+                                    <i data-lucide="calendar-plus" class="icon-style"></i>ಕ್ಯಾಲೆಂಡರ್‌ಗೆ ಸೇರಿಸಿ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-separator"></div>
+
+            <footer class="text-center py-8">
+                <h4 class="font-kannada font-bold text-lg text-gold-heading mb-4">ತಮ್ಮ ಸುಖಾಗಮನವನ್ನು ಬಯಸುವವರು:</h4>
+                <p class="font-kannada text-sm text-cream opacity-80">ಶ್ರೀಮತಿ ಮಂಗಳಗೌರಿ ಎನ್. ಮತ್ತು ಶ್ರೀ ನಾರಾಯಣಸ್ವಾಮಿ ಎನ್ ಹಾಗೂ ಕುಟುಂಬ</p>
+                <p class="font-kannada text-sm text-cream opacity-80">ಶ್ರೀಮತಿ ಸುವಾಸಿನಿ ಯಾಜಿ. ಮತ್ತು ಶ್ರೀ ನಾರಾಯಣ ಗಣಪತಿ ಭಟ್ ಹಾಗೂ ಕುಟುಂಬ</p>
+                <p class="font-kannada text-sm text-cream opacity-80">ಶ್ರೀಮತಿ ಮಧುಲತ ಮತ್ತು ಶ್ರೀ ರಾಜಶೇಖರ ಎನ್.</p>
+                <p class="font-kannada text-sm text-cream opacity-80">ಹಾಗೂ ಬಂಧು ಮಿತ್ರರು</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize animations
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Language toggle functionality
+        const langToggleButton = document.getElementById('langToggle');
+        const englishContentDiv = document.getElementById('englishContent');
+        const kannadaContentDiv = document.getElementById('kannadaContent');
+
+        // Set initial state
+        englishContentDiv.style.display = 'block';
+        kannadaContentDiv.style.display = 'none';
+        let currentLang = 'en';
+
+        langToggleButton.addEventListener('click', () => {
+            if (currentLang === 'en') {
+                englishContentDiv.style.display = 'none';
+                kannadaContentDiv.style.display = 'block';
+                currentLang = 'kn';
+                langToggleButton.textContent = 'English / ಕನ್ನಡ';
+            } else {
+                kannadaContentDiv.style.display = 'none';
+                englishContentDiv.style.display = 'block';
+                currentLang = 'en';
+                langToggleButton.textContent = 'ಕನ್ನಡ / English';
+            }
+            
+            // Refresh icons after content change
+            lucide.createIcons();
+            // Refresh animations
+            AOS.refresh();
+        });
+
+        // Function to generate Google Calendar link
+        function addToCalendar(title, startDate, endDate, details, location) {
+            const baseUrl = "https://www.google.com/calendar/render?action=TEMPLATE";
+            const eventTitle = encodeURIComponent(title);
+            const eventDates = `${startDate}/${endDate}`; 
+            const eventDetails = encodeURIComponent(details);
+            const eventLocation = encodeURIComponent(location);
+
+            const calendarUrl = `${baseUrl}&text=${eventTitle}&dates=${eventDates}&details=${eventDetails}&location=${eventLocation}`;
+            window.open(calendarUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
