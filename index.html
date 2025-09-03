@@ -20,23 +20,29 @@
 
     <style>
         :root {
-
-    --primary: #D4AF37;
-    --primary-dark: #B08D57;
-    --accent: #FFD700;
-    --text-light: #FFF8E1;
-    --background: #000;
-    --background-alt: #000;
-    --primary-rgb: 212, 175, 55;
-    --accent-rgb: 255, 215, 0;
+    /* Colors matching the invitation image */
+    --background: #F5F1E8;
+    --background-alt: #F0EAD6;
+    --text-primary: #4A3728;
+    --text-secondary: #5D4037;
+    --accent-brown: #6D4C36;
+    --light-cream: #FAF7F0;
     
---gold-primary: var(--primary);
-            --gold-secondary: var(--primary-dark);
-            --gold-light: var(--accent);
-            --cream: var(--text-light);
-            --dark-blue: var(--dark-blue);
-            --darker-blue: var(--darker-blue);
-    text-shadow: black 0 0 2px, black 0 0 3px, black 0 0 4px;
+    /* Updated color mappings */
+    --primary: #8B4513;
+    --primary-dark: #654321;
+    --accent: #A0522D;
+    --text-light: var(--text-primary);
+    --primary-rgb: 139, 69, 19;
+    --accent-rgb: 160, 82, 45;
+    
+    --gold-primary: var(--accent-brown);
+    --gold-secondary: var(--text-secondary);
+    --gold-light: var(--primary);
+    --cream: var(--text-primary);
+    
+    /* Remove heavy text shadows for cleaner look */
+    text-shadow: none;
         }
         
         body, h1, h2, h3, h4, p {
@@ -46,17 +52,17 @@
 
         p {
             font-family: "Montserrat", sans-serif;
-            color: var(--cream);
-}
+            color: var(--text-primary);
+        }
+        
         button{
-            text-shadow: black 0 0 2px, black 0 0 3px, black 0 0 4px;
-
+            color: var(--text-primary);
         }
         
         body {
             font-family: "Montserrat", sans-serif;
-            background: linear-gradient(135deg, var(--background), var(--background-alt), var(--background));
-            color: var(--cream);
+            background: linear-gradient(135deg, var(--background), var(--background-alt), var(--light-cream));
+            color: var(--text-primary);
             overflow-x: hidden;
             min-height: 100vh;
             display: flex;
@@ -85,13 +91,13 @@
         .main-card {
             width: 100%;
             max-width: 900px;
-            background: linear-gradient(135deg, rgba(10, 55, 70, 0.8), rgba(12, 45, 60, 0.5), rgba(10, 55, 70, 0.8));
+            background: linear-gradient(135deg, rgba(245, 241, 232, 0.95), rgba(240, 234, 214, 0.9), rgba(250, 247, 240, 0.95));
             backdrop-filter: blur(16px);
             border-radius: 1.5rem;
-            border: 1px solid rgba(212, 175, 55, 0.3);
-            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5), 
-                        0 0 0 1px rgba(212, 175, 55, 0.1) inset,
-                        0 0 30px rgba(212, 175, 55, 0.1) inset;
+            border: 1px solid rgba(109, 76, 54, 0.3);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15), 
+                        0 0 0 1px rgba(109, 76, 54, 0.1) inset,
+                        0 0 30px rgba(109, 76, 54, 0.05) inset;
             overflow: hidden;
             position: relative;
         }
@@ -103,7 +109,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: radial-gradient(circle at 20% 30%, rgba(212, 175, 55, 0.05) 0%, transparent 60%);
+            background: radial-gradient(circle at 20% 30%, rgba(109, 76, 54, 0.05) 0%, transparent 60%);
             pointer-events: none;
             z-index: -1;
         }
@@ -121,30 +127,30 @@
             transform: translateX(-50%);
             width: 80%;
             height: 1px;
-            background: linear-gradient(to right, transparent, var(--gold-primary), transparent);
+            background: linear-gradient(to right, transparent, var(--accent-brown), transparent);
         }
 
         .section-separator {
             content: "";
             width: 100%;
             height: 1px;
-            background: linear-gradient(to right, transparent, var(--gold-primary), transparent);
+            background: linear-gradient(to right, transparent, var(--accent-brown), transparent);
         }
         .text-gold-shine {
-            color: var(--gold-light);
-            text-shadow: 0 0 2px var(--gold-light), 0 0 1px #B8860B, 0 2px 5px rgba(0, 0, 0, 0.5);
+            color: var(--accent-brown);
+            text-shadow: none;
         }
         .text-gold-heading {
-            color: var(--gold-primary);
-            text-shadow: 2px 3px 4px rgba(0,0,0,0.7);
+            color: var(--text-secondary);
+            text-shadow: none;
         }
         .text-cream {
-            color: var(--cream);
+            color: var(--text-primary);
         }
 
         .text-golden-tint{
-            color: var(--gold-secondary);
-            text-shadow: 0 0 2px #000, 0 0 1px #000, 0 2px 5px rgba(0, 0, 0, 0.5);
+            color: var(--text-secondary);
+            text-shadow: none;
         }
         
         .decorative-border-names {
@@ -152,10 +158,10 @@
             padding: 2rem;
             margin: 2rem auto;
             max-width: 700px;
-            border: 1px solid var(--gold-secondary);
+            border: 1px solid var(--text-secondary);
             border-radius: 1rem;
-            background: linear-gradient(145deg, rgba(0,0,0,0.1), rgba(0,0,0,0.15));
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3), inset 0 0 10px rgba(212, 175, 55, 0.1);
+            background: linear-gradient(145deg, rgba(245, 241, 232, 0.3), rgba(240, 234, 214, 0.4));
+            box-shadow: 0 10px 30px rgba(74, 55, 40, 0.1), inset 0 0 10px rgba(109, 76, 54, 0.1);
         }
         
         .decorative-border-names::before,
@@ -181,8 +187,8 @@
         }
         
         .event-card {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(212, 175, 55, 0.2);
+            background: rgba(245, 241, 232, 0.4);
+            border: 1px solid rgba(109, 76, 54, 0.3);
             border-radius: 0.75rem;
             padding: 1.5rem;
             margin-bottom: 1.5rem;
@@ -191,14 +197,14 @@
         
         .event-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-            border-color: rgba(212, 175, 55, 0.4);
+            box-shadow: 0 15px 30px rgba(74, 55, 40, 0.15);
+            border-color: rgba(109, 76, 54, 0.5);
         }
         
         .btn-action {
-            background: linear-gradient(to bottom, rgba(212, 175, 55, 0.2), rgba(180, 140, 40, 0.15));
-            color: var(--gold-light);
-            border: 1px solid var(--gold-secondary);
+            background: linear-gradient(to bottom, rgba(109, 76, 54, 0.2), rgba(93, 64, 55, 0.15));
+            color: var(--text-primary);
+            border: 1px solid var(--text-secondary);
             border-radius: 0.5rem;
             padding: 0.5rem 1rem;
             font-size: 0.9rem;
@@ -209,8 +215,8 @@
         }
         
         .btn-action:hover {
-            background: linear-gradient(to bottom, rgba(212, 175, 55, 0.3), rgba(180, 140, 40, 0.25));
-            box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+            background: linear-gradient(to bottom, rgba(109, 76, 54, 0.3), rgba(93, 64, 55, 0.25));
+            box-shadow: 0 0 15px rgba(109, 76, 54, 0.2);
             transform: translateY(-2px);
         }
         
@@ -219,20 +225,20 @@
             top: 1rem;
             right: 1rem;
             z-index: 100;
-            background: rgba(0, 0, 0, 0.3);
+            background: rgba(245, 241, 232, 0.8);
             backdrop-filter: blur(5px);
-            border: 1px solid var(--gold-secondary);
-            color: var(--gold-light);
+            border: 1px solid var(--text-secondary);
+            color: var(--text-primary);
             border-radius: 0.5rem;
             padding: 0.5rem 1rem;
             font-size: 0.9rem;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 4px rgba(212, 175, 55, 0.5); /* Added golden shadow for highlight */
-            cursor: pointer; /* Change cursor to pointer */
+            box-shadow: 0 4px 4px rgba(109, 76, 54, 0.2);
+            cursor: pointer;
         }
         
         .lang-toggle-btn:hover {
-            background: rgba(212, 175, 55, 0.2);
+            background: rgba(109, 76, 54, 0.2);
         }
         
         .icon-style {
@@ -256,7 +262,7 @@
             left: 0;
             width: 100%;
             height: 2px;
-            background: linear-gradient(to right, transparent, var(--gold-primary), transparent);
+            background: linear-gradient(to right, transparent, var(--accent-brown), transparent);
         }
         
         .divider {
@@ -270,11 +276,11 @@
             content: "";
             flex: 1;
             height: 1px;
-            background: linear-gradient(to right, transparent, var(--gold-primary), transparent);
+            background: linear-gradient(to right, transparent, var(--accent-brown), transparent);
         }
         
         .divider span {
-            color: var(--gold-light);
+            color: var(--text-secondary);
             font-size: 1rem;
         }
         
@@ -590,7 +596,6 @@
                 <p class="font-kannada text-sm text-cream opacity-80">ಶ್ರೀಮತಿ ಕಮಲಾಕ್ಷಿ ಕೋಂ ವೆಂಕಟರಮಣ ಸಣ್ಣಪ್ಪ ಹೆಗಡೆ ಹಾಗೂ ಮಕ್ಕಳು, ಸರಕುಳಿ</p>
                 <p class="font-kannada text-sm text-cream opacity-80">ಶ್ರೀಮತಿ ವಾಣಿ ಮತ್ತು ಶ್ರೀ ಶ್ರೀಕಾಂತ ಹೆಗಡೆ</p>
                 <p class="font-kannada text-sm text-cream opacity-80">ಗೆಣಸಿನಕುಣಿ ಮನೆತನದವರು, ಭಾಗಿ ಕುಟುಂಬದವರು, ಗುರಿಕ್ಕಾರರು ಹಾಗೂ ಪುರಪ್ಪೇಮನೆ ಗ್ರಾಮಸ್ಥರು ಮತ್ತು ಬಂಧು ಮಿತ್ರರು</p>
-                <!-- <p class="font-kannada text-sm text-cream opacity-80">ಹಾಗೂ ಬಂಧು ಮಿತ್ರರು</p> -->
             </footer>
         </div>
     </div>
