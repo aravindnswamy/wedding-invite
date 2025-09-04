@@ -23,22 +23,22 @@
     /* Colors matching the invitation image */
     --background: #F5F1E8;
     --background-alt: #F0EAD6;
-    --text-primary: #4A3728;
-    --text-secondary: #5D4037;
-    --accent-brown: #6D4C36;
+    --text-primary: #b73149;
+    --text-secondary: #b73149;
+    --accent-brown: #b73149;
     --light-cream: #FAF7F0;
     
     /* Updated color mappings */
-    --primary: #8B4513;
-    --primary-dark: #654321;
-    --accent: #A0522D;
+    --primary: #b73149;
+    --primary-dark: #b73149;
+    --accent: #b73149;
     --text-light: var(--text-primary);
-    --primary-rgb: 139, 69, 19;
-    --accent-rgb: 160, 82, 45;
+    --primary-rgb: 76, 0, 19;
+    --accent-rgb: 76, 0, 19;
     
-    --gold-primary: var(--accent-brown);
+    --gold-primary: var(--text-primary);
     --gold-secondary: var(--text-secondary);
-    --gold-light: var(--primary);
+    --gold-light: var(--text-primary);
     --cream: var(--text-primary);
     
     /* Remove heavy text shadows for cleaner look */
@@ -171,9 +171,14 @@
             margin: 2rem auto;
             max-width: 700px;
             border: 1px solid var(--text-secondary);
-            border-radius: 1rem;
+            /* border-radius: 1rem; */
+            border: none;
             background: linear-gradient(145deg, rgba(245, 241, 232, 0.3), rgba(240, 234, 214, 0.4));
             box-shadow: 0 10px 30px rgba(74, 55, 40, 0.1), inset 0 0 10px rgba(109, 76, 54, 0.1);
+            background-image: url('border.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-position: center;
         }
         
         .decorative-border-names::before,
@@ -182,7 +187,7 @@
             position: absolute;
             width: 80px;
             height: 80px;
-            background-image: url('rose-removebg-preview.png');
+            /* background-image: url('rose-removebg-preview.png'); */
             background-size: contain;
             background-repeat: no-repeat;
             opacity: 1;
@@ -408,7 +413,8 @@
     
     <div class="main-card animate-fade-in">
         
-        <div id="englishContent" class="english-content space-y-8 py-8 px-4 md:px-8">
+        <div id="englishContent" class="english-content space-y-8 py-8 px-4 md:px-8" style="position: relative;">
+            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: url('beige-background-without-leaf.png'); background-size: 100% auto; background-repeat: no-repeat; background-position: top center; opacity: 1.0; z-index: -10;"></div>
             <div class="invitation-header">
                 <img src="ganapathi.png" alt="Sri Ganeshaya Namaha" class="mx-auto h-28 md:h-36 w-auto drop-shadow-lg">
                 <p class="font-kannada text-lg md:text-xl text-gold-shine mt-4">"Sri Ganeshaya Namaha | Sri KulaDevata Prasanna"</p>
@@ -416,7 +422,7 @@
                     Śrī matpayōnidhinikētana cakrapāṇē bhōgīndrabhōgamaṇirañjita puṇyamūrtē | <br>
                     Yōgīśa śāśvata śaraṇya bhavābdhipōta śrī lakṣmīnr̥siṁha mama dēhi karāvalambam ||
                 </p> -->
-                <h1 class="font-cinzel-decorative text-3xl md:text-4xl lg:text-5xl text-gold-heading mt-6 tracking-wider">Wedding Invitation</h1>
+                <h1 class=" text-3xl md:text-4xl lg:text-5xl text-gold-heading mt-6 tracking-wider">Wedding Invitation</h1>
             </div>
             <section class="text-center space-y-4 max-w-3xl mx-auto">
                 <p class="text-md md:text-lg text-cream">With divine blessings and joyous hearts,</p>
@@ -437,7 +443,7 @@
                     <div class="flex flex-col items-center">
                         <div class="groom-details mb-6">
                             <h2 class="couple-name font-cinzel-decorative text-gold-shine">Aravind N</h2>
-                            <p class="text-xs md:text-sm text-cream opacity-80 mt-1">(Son of Smt. MangalaGowri N. & Sri. Narayanaswamy N.)</p>
+                            <p class="text-xs md:text-sm text-cream opacity-100 mt-1">(Son of Smt. MangalaGowri N. & Sri. Narayanaswamy N.)</p>
                         </div>
                         
                         <div class="divider">
@@ -449,7 +455,7 @@
                         
                         <div class="bride-details mt-6">
                             <h2 class="couple-name font-cinzel-decorative text-gold-shine">Apoorva Bhat</h2>
-                            <p class="text-xs md:text-sm text-cream opacity-80 mt-1">(Daughter of Smt. Suvasini Yaji & Sri. Narayana Ganapathi Bhat)</p>
+                            <p class="text-xs md:text-sm text-cream opacity-`100 mt-1">(Daughter of Smt. Suvasini Yaji & Sri. Narayana Ganapathi Bhat)</p>
                         </div>
                     </div>
                 </div>
@@ -466,7 +472,7 @@
             </div>
 
             <section class="space-y-8 py-4">
-                <h3 class="font-cinzel-decorative text-gold-heading text-2xl md:text-3xl text-center mb-6">WEDDING FESTIVITIES</h3>
+                <h3 class="text-gold-heading text-2xl md:text-3xl text-center mb-6">WEDDING FESTIVITIES</h3>
               
                 <div class="max-w-3xl mx-auto">
                   <div class="flex flex-col md:flex-row gap-4">
@@ -531,18 +537,19 @@
 
             <footer class="text-center py-8">
                 <h4 class="font-lora text-lg text-gold-heading mb-4">With Best Compliments From:</h4>
-                <p class="text-sm opacity-80">Smt. Madhulatha & Sri. N. Rajashekar, Purappemane</p>
-                <p class="text-sm opacity-80">Ms. Sumana</p>
-                <p class="text-sm opacity-80">Smt. Prathima & Sri. U. R. Krishnamurthy & Family, Ullur</p>
-                <p class="text-sm opacity-80">Smt. Meenakshamma & Family, Purappemane</p>
-                <p class="text-sm opacity-80">Smt. Kusuma & Sri. Ravi G. K & Family, Purappemane</p>
-                <p class="text-sm opacity-80">Smt. Anjana & Sri. Shantarama G. K & Family, Bengaluru</p>
-                <p class="text-sm opacity-80">Smt. Kamala Venkataramana Hegde & Family, Sarakuli</p>
-                <p class="text-sm opacity-80">All Relatives & Friends</p>
+                <p class="text-sm opacity-100">Smt. Madhulatha & Sri. N. Rajashekar, Purappemane</p>
+                <p class="text-sm opacity-100">Ms. Sumana</p>
+                <p class="text-sm opacity-100">Smt. Prathima & Sri. U. R. Krishnamurthy & Family, Ullur</p>
+                <p class="text-sm opacity-100">Smt. Meenakshamma & Family, Purappemane</p>
+                <p class="text-sm opacity-100">Smt. Kusuma & Sri. Ravi G. K & Family, Purappemane</p>
+                <p class="text-sm opacity-100">Smt. Anjana & Sri. Shantarama G. K & Family, Bengaluru</p>
+                <p class="text-sm opacity-100">Smt. Kamala Venkataramana Hegde & Family, Sarakuli</p>
+                <p class="text-sm opacity-100">All Relatives & Friends</p>
             </footer>
         </div>
 
-        <div id="kannadaContent" class="kannada-content space-y-8 py-8 px-4 md:px-8">
+        <div id="kannadaContent" class="kannada-content space-y-8 py-8 px-4 md:px-8" style="position: relative;">
+            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: url('beige-background-without-leaf.png'); background-size: 100% auto; background-repeat: no-repeat; background-position: top center; opacity: 1.0; z-index: -10;"></div>
             <div class="invitation-header">
                 <img src="ganapathi.png" alt="Sri Ganeshaya Namaha" class="mx-auto h-28 md:h-36 w-auto drop-shadow-lg">
                 <p class="font-kannada text-lg md:text-xl text-gold-shine mt-4">"ಶ್ರೀ ಗಣೇಶಾಯ ನಮಃ | ಶ್ರೀ ಕುಲದೇವತಾ ಪ್ರಸನ್ನ"</p>
@@ -577,7 +584,7 @@
                     <div class="flex flex-col items-center">
                         <div class="groom-details mb-6">
                             <h2 class="font-hubballi couple-name text-gold-shine">ಚಿ||ರಾ|| ಅರವಿಂದ್ ಎನ್</h2>
-                            <p class="font-kannada text-xs md:text-sm text-cream opacity-80 mt-1">(ಶ್ರೀಮತಿ ಮಂಗಳಗೌರಿ ಎನ್. ಮತ್ತು ಶ್ರೀ ನಾರಾಯಣಸ್ವಾಮಿ ಎನ್. ಇವರ ಸುಪುತ್ರ)</p>
+                            <p class="font-kannada text-xs md:text-sm text-cream opacity-100 mt-1">(ಶ್ರೀಮತಿ ಮಂಗಳಗೌರಿ ಎನ್. ಮತ್ತು ಶ್ರೀ ನಾರಾಯಣಸ್ವಾಮಿ ಎನ್. ಇವರ ಸುಪುತ್ರ)</p>
                         </div>
                         
                         <div class="divider">
@@ -589,7 +596,7 @@
                         
                         <div class="bride-details mt-6">
                             <h2 class="font-hubballi couple-name text-gold-shine">ಚಿ||ಕುಂ||ಸೌ|| ಅಪೂರ್ವ ಭಟ್</h2>
-                            <p class="font-kannada text-xs md:text-sm text-cream opacity-80 mt-1">(ಶ್ರೀಮತಿ ಸುವಾಸಿನಿ ಯಾಜಿ. ಮತ್ತು ಶ್ರೀ ನಾರಾಯಣ ಗಣಪತಿ ಭಟ್. ಇವರ ಪುತ್ರಿ)</p>
+                            <p class="font-kannada text-xs md:text-sm text-cream opacity-100 mt-1">(ಶ್ರೀಮತಿ ಸುವಾಸಿನಿ ಯಾಜಿ. ಮತ್ತು ಶ್ರೀ ನಾರಾಯಣ ಗಣಪತಿ ಭಟ್. ಇವರ ಪುತ್ರಿ)</p>
                         </div>
                     </div>
                     
@@ -668,15 +675,15 @@
 
             <footer class="text-center py-8">
                 <h4 class="font-kannada font-bold text-lg text-gold-heading mb-4">ತಮ್ಮ ಸುಖಾಗಮನವನ್ನು ಬಯಸುವವರು:</h4>
-                <p class="font-kannada text-sm text-cream opacity-80">ಶ್ರೀಮತಿ ಮಧುಲತ ಮತ್ತು ಶ್ರೀ ರಾಜಶೇಖರ ಎನ್, ಪುರಪ್ಪೇಮನೆ</p>
-                <p class="font-kannada text-sm text-cream opacity-80">ಕು| ಸುಮನ, ಪುರಪ್ಪೇಮನೆ</p>
-                <p class="font-kannada text-sm text-cream opacity-80">ಶ್ರೀಮತಿ ಪ್ರತಿಮ ಮತ್ತು ಶ್ರೀ ಕೃಷ್ಣಮೂರ್ತಿ. ಯು. ಆರ್. ಹಾಗೂ ಮಕ್ಕಳು, ಉಳ್ಳೂರು</p>
-                <p class="font-kannada text-sm text-cream opacity-80">ಶ್ರೀಮತಿ ಮೀನಾಕ್ಷಮ್ಮ ಕೋಂ ಭಾನುಚಂದ್ರ ಹಾಗೂ ಮಕ್ಕಳು, ಪುರಪ್ಪೇಮನೆ</p>
-                <p class="font-kannada text-sm text-cream opacity-80">ಶ್ರೀಮತಿ ರೇವತಿ ಮತ್ತು ಶ್ರೀ ನಾಗರಾಜ ಜಿ. ಎಂ ಹಾಗೂ ಮಕ್ಕಳು, ಪುರಪ್ಪೇಮನೆ</p>
-                <p class="font-kannada text-sm text-cream opacity-80">ಶ್ರೀಮತಿ ಕುಸುಮ ಮತ್ತು ಶ್ರೀ ರವಿ ಜಿ. ಕೆ ಹಾಗೂ ಸಹೋದರರು ಹಾಗೂ ಮಕ್ಕಳು, ಪುರಪ್ಪೇಮನೆ</p>
-                <p class="font-kannada text-sm text-cream opacity-80">ಶ್ರೀಮತಿ ಕಮಲಾಕ್ಷಿ ಕೋಂ ವೆಂಕಟರಮಣ ಸಣ್ಣಪ್ಪ ಹೆಗಡೆ ಹಾಗೂ ಮಕ್ಕಳು, ಸರಕುಳಿ</p>
-                <p class="font-kannada text-sm text-cream opacity-80">ಶ್ರೀಮತಿ ವಾಣಿ ಮತ್ತು ಶ್ರೀ ಶ್ರೀಕಾಂತ ಹೆಗಡೆ</p>
-                <p class="font-kannada text-sm text-cream opacity-80">ಗೆಣಸಿನಕುಣಿ ಮನೆತನದವರು, ಭಾಗಿ ಕುಟುಂಬದವರು, ಗುರಿಕ್ಕಾರರು ಹಾಗೂ ಪುರಪ್ಪೇಮನೆ ಗ್ರಾಮಸ್ಥರು ಮತ್ತು ಬಂಧು ಮಿತ್ರರು</p>
+                <p class="font-kannada text-sm text-cream opacity-100">ಶ್ರೀಮತಿ ಮಧುಲತ ಮತ್ತು ಶ್ರೀ ರಾಜಶೇಖರ ಎನ್, ಪುರಪ್ಪೇಮನೆ</p>
+                <p class="font-kannada text-sm text-cream opacity-100">ಕು| ಸುಮನ, ಪುರಪ್ಪೇಮನೆ</p>
+                <p class="font-kannada text-sm text-cream opacity-100">ಶ್ರೀಮತಿ ಪ್ರತಿಮ ಮತ್ತು ಶ್ರೀ ಕೃಷ್ಣಮೂರ್ತಿ. ಯು. ಆರ್. ಹಾಗೂ ಮಕ್ಕಳು, ಉಳ್ಳೂರು</p>
+                <p class="font-kannada text-sm text-cream opacity-100">ಶ್ರೀಮತಿ ಮೀನಾಕ್ಷಮ್ಮ ಕೋಂ ಭಾನುಚಂದ್ರ ಹಾಗೂ ಮಕ್ಕಳು, ಪುರಪ್ಪೇಮನೆ</p>
+                <p class="font-kannada text-sm text-cream opacity-100">ಶ್ರೀಮತಿ ರೇವತಿ ಮತ್ತು ಶ್ರೀ ನಾಗರಾಜ ಜಿ. ಎಂ ಹಾಗೂ ಮಕ್ಕಳು, ಪುರಪ್ಪೇಮನೆ</p>
+                <p class="font-kannada text-sm text-cream opacity-100">ಶ್ರೀಮತಿ ಕುಸುಮ ಮತ್ತು ಶ್ರೀ ರವಿ ಜಿ. ಕೆ ಹಾಗೂ ಸಹೋದರರು ಹಾಗೂ ಮಕ್ಕಳು, ಪುರಪ್ಪೇಮನೆ</p>
+                <p class="font-kannada text-sm text-cream opacity-100">ಶ್ರೀಮತಿ ಕಮಲಾಕ್ಷಿ ಕೋಂ ವೆಂಕಟರಮಣ ಸಣ್ಣಪ್ಪ ಹೆಗಡೆ ಹಾಗೂ ಮಕ್ಕಳು, ಸರಕುಳಿ</p>
+                <p class="font-kannada text-sm text-cream opacity-100">ಶ್ರೀಮತಿ ವಾಣಿ ಮತ್ತು ಶ್ರೀ ಶ್ರೀಕಾಂತ ಹೆಗಡೆ</p>
+                <p class="font-kannada text-sm text-cream opacity-100">ಗೆಣಸಿನಕುಣಿ ಮನೆತನದವರು, ಭಾಗಿ ಕುಟುಂಬದವರು, ಗುರಿಕ್ಕಾರರು ಹಾಗೂ ಪುರಪ್ಪೇಮನೆ ಗ್ರಾಮಸ್ಥರು ಮತ್ತು ಬಂಧು ಮಿತ್ರರು</p>
             </footer>
         </div>
     </div>
