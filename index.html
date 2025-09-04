@@ -136,6 +136,18 @@
             height: 1px;
             background: linear-gradient(to right, transparent, var(--accent-brown), transparent);
         }
+
+        .stretched-barat-image {
+            width: 100%;
+            max-width: 700px;
+            height: 300px;
+            object-fit: cover;
+            object-position: center 30%;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(74, 55, 40, 0.2);
+            margin: 0rem 0;
+        }
+
         .text-gold-shine {
             color: var(--accent-brown);
             text-shadow: none;
@@ -311,6 +323,11 @@
                 justify-content: center;
                 margin-top: 0.75rem;
             }
+
+            .stretched-barat-image {
+                max-width: 100%;
+                height: 50px;
+            }
         }
         
         @media (max-width: 480px) {
@@ -325,6 +342,10 @@
             .lang-toggle-btn {
                 padding: 0.4rem 0.8rem;
                 font-size: 0.8rem;
+            }
+
+            .stretched-barat-image {
+                height: 40px;
             }
         }
         
@@ -409,9 +430,7 @@
                 <p class="text-md md:text-lg text-cream mt-4">cordially invite you to grace the auspicious wedding ceremony of</p>
             </section>
 
-            <div class="section-separator">
-
-            </div>
+            <div class="section-separator"></div>
 
             <section class="text-center py-6">
                 <div class="decorative-border-names">
@@ -422,7 +441,10 @@
                         </div>
                         
                         <div class="divider">
-                            <span><i data-lucide="heart-handshake" class="icon-style"></i></span>
+                            <span class="relative">
+                                <img src="mantapa.png" alt="Mantapa" class="w-20 h-20 object-contain">
+                                <i data-lucide="heart-handshake" class="icon-style absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 translate-y-1"></i>
+                            </span>
                         </div>
                         
                         <div class="bride-details mt-6">
@@ -434,6 +456,14 @@
             </section>
 
             <div class="section-separator"></div>
+            
+            <!-- Stretched Barat Image -->
+            <!-- Barat Images Side by Side -->
+            <!-- <div class="flex justify-center items-center gap-4 py-2">
+                <img src="barat-apoorva-aravind.png" alt="Aravind & Apoorva" class="w-32 h-32 object-contain"> -->
+            <div class="flex justify-center py-2">
+                <img src="barat.png" alt="Barat" class="stretched-barat-image">
+            </div>
 
             <section class="space-y-8 py-4">
                 <h3 class="font-cinzel-decorative text-gold-heading text-2xl md:text-3xl text-center mb-6">WEDDING FESTIVITIES</h3>
@@ -551,7 +581,10 @@
                         </div>
                         
                         <div class="divider">
-                            <span><i data-lucide="heart-handshake" class="icon-style"></i></span>
+                            <span class="relative">
+                                <img src="mantapa.png" alt="ಮಂಟಪ" class="w-20 h-20 object-contain">
+                                <i data-lucide="heart-handshake" class="icon-style absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 translate-y-1"></i>
+                            </span>
                         </div>
                         
                         <div class="bride-details mt-6">
@@ -574,6 +607,14 @@
             </section>
 
             <div class="section-separator"></div>
+
+            <!-- Stretched Barat Image for Kannada version -->
+            <!-- Barat Images Side by Side for Kannada version -->
+            <!-- <div class="flex justify-center items-center gap-4 py-2">
+                <img src="barat-apoorva-aravind.png" alt="ಅರವಿಂದ್ & ಅಪೂರ್ವ" class="w-32 h-32 object-contain"> -->
+            <div class="flex justify-center py-2">
+                <img src="barat.png" alt="ಬಾರಾತ್" class="stretched-barat-image">
+            </div>
 
             <section class="space-y-8 py-4">
                 <h3 class="font-hubballi font-bold text-2xl md:text-3xl text-center text-gold-heading mb-6">ವಿವಾಹ ಕಾರ್ಯಕ್ರಮಗಳು</h3>
